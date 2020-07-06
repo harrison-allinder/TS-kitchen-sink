@@ -1,11 +1,10 @@
-// all my variables, created buttons, created array
 let btnSubmit = $('#btnSubmit');
 let btnRoll = $(`#btnRoll`);
 let btnSum = $(`#btnSum`);
 let diceContainer = document.getElementById('dice-container');
 let numOfDice = 0;
 diceArray = [];
-// adds click functions and adds new functionality
+
 btnSubmit.click(() => {
     new Die();
 });
@@ -20,7 +19,7 @@ btnSum.click(() => {
     })
     alert(sum);
 });
-// this is where the die gets all it's values
+
 class thisDie {
     value: any;
     div: HTMLDivElement;
@@ -48,5 +47,4 @@ class thisDie {
         this.value = randomVal;
         this.div.innerText = this.value;
     }
-}
-//I DIDN'T KNOW HOW TO FIX THE BUTTON ERRORS, WILL ASK ABOUT THAT - OR THE DICEARRAY/CONTAINERS, OTHERWISE MOSTLY EVERYTHING SHOULD BE CONVERTED AND FIXED 
+} 
